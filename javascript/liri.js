@@ -1,14 +1,15 @@
-//require("dotenv").config();
+require("dotenv").config();
 var fs = require('fs')
 var Keys = require("./keys.js");
 var axios = require("axios");
-
+var Spotify = require('node-spotify-api');
+var spotify = new Spotify(keys.spotify);
 var search = process.argv[2];
 var term = process.argv[3];
 
 
 const Look = function () {
-    console.log("here")
+   
     // node liri.js concert-this <artist/band name here>
 
 
@@ -36,7 +37,8 @@ const Look = function () {
 
     this.findSong = function (song) {
 
-        var keys = new Keys(keys.spotifyK);
+      var keys = new Keys(keys.spotify);
+
         if (!search) {
             search = 'The Sign';
         }
@@ -71,7 +73,7 @@ const Look = function () {
         var URL = "http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
         console.log(URL);
 
-        axios.get(queryUrl).then(function (response) {
+        axios.get(URL).then(function (response) {
 
             var jsonData = response.data;
 
@@ -92,27 +94,31 @@ const Look = function () {
             });
         });
     };
-};
 
-Look.prototype.findBand = function (band) {
-    var URL = "https://rest.bandsintown.com/artists/" + band + "/events?app_id=codingbootcamp";
-    axios.get(URL).then(function (response) {
 
-        var jsonData = response.data;
+    Look.prototype.findBand = function (band) {
+        var URL = "https://rest.bandsintown.com/artists/" + band + "/events?app_id=codingbootcamp";
+        axios.get(URL).then(function (response) {
 
-        var bandData = [
-            "Venue: " + jsonData.venue.name,
-            "Location: " + jsonData.venue.city,
-            "Date: " + jsonData.datetime,
-        ].join("\n\n");
+            var jsonData = response.data;
+            console.log(jsonData);
+            var bandData = [
+                "Venue: " + jsonData.venue.name,
+                "Location: " + jsonData.venue.city,
+                "Date: " + jsonData.datetime,
+            ].join("\n\n");
 
-        fs.appendFile("log.txt", bandData, function (err) {
-            if (err) throw err;
-            console.log(bandData);
+            fs.appendFile("log.txt", bandData, function (err) {
+                if (err) throw err;
+                console.log(bandData);
+            });
         });
-    });
+
+    };
 
 };
+
+const go = new Look();
 
 if (!search) {
     search = "show";
@@ -126,14 +132,16 @@ if (!term) {
 
 if (search === "movie") {
     console.log("Searching for Movie");
-    Look.findMovie(term);
+    go.findMovie(term);
 } if (search === "song") {
     console.log("Searching for song")
-    Keys.findSong(term);
+    go.findSong(term);
 } if (search === "band") {
     console.log("Searching for Song");
-    Look.findBand(term)
+    go.findBand(term)
 }
+
+
 
 
 
