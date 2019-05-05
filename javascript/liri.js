@@ -8,11 +8,11 @@ var search = process.argv[2];
 var term = process.argv[3];
 
 const Look = function () {
-   
+
     this.findBand = function (band) {
         var URL = "https://rest.bandsintown.com/artists/" + band + "/events?app_id=codingbootcamp";
         axios.get(URL).then(function (response) {
-            
+
 
             var jsonData = response.data;
 
@@ -21,24 +21,24 @@ const Look = function () {
             for (var i = 0; i < jsonData.length; i++) {
                 var show = jsonData[i];
 
-                
-            var bandData = [
-                "Venue: " + show.venue.name,
-                "Location: " + show.venue.region || show.venue.country,
-                "Date: " + show.datetime,
-            ].join("\n\n");
 
-console.log(bandData);
+                var bandData = [
+                    "Venue: " + show.venue.name,
+                    "Location: " + show.venue.region || show.venue.country,
+                    "Date: " + show.datetime,
+                ].join("\n\n");
 
-            fs.appendFile("log.txt", bandData, function (err) {
-                if (err) throw err;
                 console.log(bandData);
-            });
-        }
+
+                fs.appendFile("log.txt", bandData, function (err) {
+                    if (err) throw err;
+                    console.log(bandData);
+                });
+            }
         });
 
     };
-    
+
 
     this.findSong = function (song) {
 
@@ -100,10 +100,21 @@ console.log(bandData);
         });
     };
 
+    this.doWhatItSays = function() {
+        fs.readFile("random.txt", "utf8", function(err, data) {
+            if (err) throw err;
+          console.log(data);
+      
+        
+        });
+      };
+      
 
-  
+
 
 };
+
+
 
 const go = new Look();
 
@@ -119,7 +130,11 @@ if (search === "movie-this") {
 } if (search === "concert-this") {
     console.log("Searching for Song");
     go.findBand(term)
+} if (search === "do-what-it-says") {
+    console.log()
+    go.doWhatItSays(term)
 }
+
 
 
 
