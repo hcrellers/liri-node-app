@@ -101,38 +101,13 @@ console.log(bandData);
     };
 
 
-    Look.prototype.findBand = function (band) {
-        var URL = "https://rest.bandsintown.com/artists/" + band + "/events?app_id=codingbootcamp";
-        axios.get(URL).then(function (response) {
-
-            var jsonData = response.data;
-            console.log(jsonData);
-            var bandData = [
-                "Venue: " + jsonData.venue.name,
-                "Location: " + jsonData.venue.city,
-                "Date: " + jsonData.datetime,
-            ].join("\n\n");
-
-            fs.appendFile("log.txt", bandData, function (err) {
-                if (err) throw err;
-                console.log(bandData);
-            });
-        });
-
-    };
+  
 
 };
 
 const go = new Look();
 
-if (!search) {
-    search = "show";
-}
 
-
-if (!term) {
-    term = "Andy Griffith";
-}
 
 
 if (search === "movie-this") {
