@@ -10,4 +10,212 @@ Language: English
 
 Plot: Widower Sheriff Andy Taylor, and his son Opie, live with Andy's Aunt Bee in Mayberry, North Carolina. With virtually no crimes to solve, most of Andy's time is spent philosophizing and calming down his cousin Deputy Barney Fife.
 
-Actors: Andy Griffith, Ron Howard, Frances Bavier, Don Knotts
+Actors: Andy Griffith, Ron Howard, Frances Bavier, Don KnottsTitle: The Andy Griffith Show
+
+Release Year: 1960–1968
+
+OMDB Rating: 8.3
+
+Country: USA
+
+Language: English
+
+Plot: Widower Sheriff Andy Taylor, and his son Opie, live with Andy's Aunt Bee in Mayberry, North Carolina. With virtually no crimes to solve, most of Andy's time is spent philosophizing and calming down his cousin Deputy Barney Fife.
+
+Actors: Andy Griffith, Ron Howard, Frances Bavier, Don KnottsVenue: Riverbend Festival
+
+Location: TN
+
+Date: 2019-05-29T21:30:56Venue: O2 Academy Brixton
+
+Location: 
+
+Date: 2019-06-29T19:00:12Venue: Tivoli Vredenburg
+
+Location: 
+
+Date: 2019-07-04T19:00:55Venue: Eurockéennes
+
+Location: 
+
+Date: 2019-07-06T19:00:34Venue: Rock Werchter 2019
+
+Location: 
+
+Date: 2019-06-28T19:00:28Venue: Stadtpark
+
+Location: 
+
+Date: 2019-07-02T19:00:51Venue: Sonic Park 
+
+Location: 
+
+Date: 2019-07-07T19:00:10Venue: NOS Alive Festival
+
+Location: 
+
+Date: 2019-07-11T19:00:19Venue: Xtra
+
+Location: 
+
+Date: 2019-07-08T19:00:34Venue: Bilbao BBK (July 11th-13th, Single Day TBA)
+
+Location: 
+
+Date: 2019-07-13T19:00:10Venue: Bukta Open Air Festival (July 18th-20th, Single Day TBA)
+
+Location: 
+
+Date: 2019-07-18T19:00:41Venue: Grönan Live
+
+Location: 
+
+Date: 2019-07-16T19:00:30Venue: North Dakota State Fair Center
+
+Location: ND
+
+Date: 2019-07-27T20:00:16Venue: Malakoff Festival (July 18th-20th, Single Day TBA)
+
+Location: 
+
+Date: 2019-07-20T19:00:49Venue: ZOZO Marine Stadium
+
+Location: Chiba-ken
+
+Date: 2019-08-16T19:00:11Venue: Maishima Sports Island
+
+Location: Ōsaka-fu
+
+Date: 2019-08-18T19:00:01Venue: Jazz Aspen Snowmass
+
+Location: CO
+
+Date: 2019-08-30T19:00:41Venue: Washington State Fair
+
+Location: WA
+
+Date: 2019-09-01T19:30:58Venue: Movistar Arena
+
+Location: 
+
+Date: 2019-09-24T19:00:23Venue: Rock in Rio
+
+Location: 
+
+Date: 2019-09-28T19:00:43Venue: Estadio El Campín
+
+Location: 
+
+Date: 2019-10-01T19:00:26Venue: Estadio Nacional de Costa Rica
+
+Location: 
+
+Date: 2019-10-04T19:00:33Venue: Musikfest
+
+Location: PA
+
+Date: 2019-08-05T19:00:09Venue: Riverbend Festival
+
+Location: TN
+
+Date: 2019-05-29T21:30:56Venue: Rock Werchter 2019
+
+Location: 
+
+Date: 2019-06-28T19:00:28Venue: O2 Academy Brixton
+
+Location: 
+
+Date: 2019-06-29T19:00:12Venue: Stadtpark
+
+Location: 
+
+Date: 2019-07-02T19:00:51Venue: Eurockéennes
+
+Location: 
+
+Date: 2019-07-06T19:00:34Venue: Tivoli Vredenburg
+
+Location: 
+
+Date: 2019-07-04T19:00:55Venue: Xtra
+
+Location: 
+
+Date: 2019-07-08T19:00:34Venue: Sonic Park 
+
+Location: 
+
+Date: 2019-07-07T19:00:10Venue: NOS Alive Festival
+
+Location: 
+
+Date: 2019-07-11T19:00:19Venue: Bilbao BBK (July 11th-13th, Single Day TBA)
+
+Location: 
+
+Date: 2019-07-13T19:00:10Venue: Grönan Live
+
+Location: 
+
+Date: 2019-07-16T19:00:30Venue: Bukta Open Air Festival (July 18th-20th, Single Day TBA)
+
+Location: 
+
+Date: 2019-07-18T19:00:41Venue: Malakoff Festival (July 18th-20th, Single Day TBA)
+
+Location: 
+
+Date: 2019-07-20T19:00:49Venue: North Dakota State Fair Center
+
+Location: ND
+
+Date: 2019-07-27T20:00:16Venue: Musikfest
+
+Location: PA
+
+Date: 2019-08-05T19:00:09Venue: ZOZO Marine Stadium
+
+Location: Chiba-ken
+
+Date: 2019-08-16T19:00:11Venue: Maishima Sports Island
+
+Location: Ōsaka-fu
+
+Date: 2019-08-18T19:00:01Venue: Jazz Aspen Snowmass
+
+Location: CO
+
+Date: 2019-08-30T19:00:41Venue: Washington State Fair
+
+Location: WA
+
+Date: 2019-09-01T19:30:58Venue: Rock in Rio
+
+Location: 
+
+Date: 2019-09-28T19:00:43Venue: Movistar Arena
+
+Location: 
+
+Date: 2019-09-24T19:00:23Venue: Estadio El Campín
+
+Location: 
+
+Date: 2019-10-01T19:00:26Venue: Estadio Nacional de Costa Rica
+
+Location: 
+
+Date: 2019-10-04T19:00:33Title: Blow
+
+Release Year: 2001
+
+OMDB Rating: 7.6
+
+Country: USA
+
+Language: English
+
+Plot: The story of how George Jung, along with the Medellín Cartel headed by Pablo Escobar, established the American cocaine market in the 1970s in the United States.
+
+Actors: Johnny Depp, Penélope Cruz, Franka Potente, Rachel Griffiths

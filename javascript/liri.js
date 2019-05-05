@@ -1,43 +1,47 @@
 require("dotenv").config();
 var fs = require('fs')
-var Keys = require("./keys.js");
+var keys = require("./keys.js");
 var axios = require("axios");
 var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
 var search = process.argv[2];
 var term = process.argv[3];
 
-
 const Look = function () {
    
-    // node liri.js concert-this <artist/band name here>
-
-
-
     this.findBand = function (band) {
         var URL = "https://rest.bandsintown.com/artists/" + band + "/events?app_id=codingbootcamp";
         axios.get(URL).then(function (response) {
+            
 
             var jsonData = response.data;
 
+            console.log("Upcoming concerts for " + band + ":");
+
+            for (var i = 0; i < jsonData.length; i++) {
+                var show = jsonData[i];
+
+                
             var bandData = [
-                "Venue: " + jsonData.venue.name,
-                "Location: " + jsonData.venue.city,
-                "Date: " + jsonData.datetime,
+                "Venue: " + show.venue.name,
+                "Location: " + show.venue.region || show.venue.country,
+                "Date: " + show.datetime,
             ].join("\n\n");
+
+console.log(bandData);
 
             fs.appendFile("log.txt", bandData, function (err) {
                 if (err) throw err;
                 console.log(bandData);
             });
+        }
         });
 
     };
-    //node liri.js spotify-this-song '<song name here>'
+    
 
     this.findSong = function (song) {
 
-      var keys = new Keys(keys.spotify);
 
         if (!search) {
             search = 'The Sign';
@@ -68,6 +72,7 @@ const Look = function () {
         });
 
     };
+
     this.findMovie = function (movie) {
 
         var URL = "http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
@@ -130,13 +135,13 @@ if (!term) {
 }
 
 
-if (search === "movie") {
+if (search === "movie-this") {
     console.log("Searching for Movie");
     go.findMovie(term);
-} if (search === "song") {
+} if (search === "spotify-this-song") {
     console.log("Searching for song")
     go.findSong(term);
-} if (search === "band") {
+} if (search === "concert-this") {
     console.log("Searching for Song");
     go.findBand(term)
 }
